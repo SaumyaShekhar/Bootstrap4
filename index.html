@@ -26,7 +26,7 @@
                 <img src="img/logo.png" height="30" width="41">
             </a>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">
                             <span class="fa fa-home fa-lg"></span> Home</a>
@@ -44,11 +44,32 @@
                             <span class="fa fa-address-card fa-lg"></span> Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span>Login</a>    
+                </span>
             </div>
         </div>
 
     </nav>
 
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button> 
+
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer"> 
+
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header align-items-center">
@@ -63,7 +84,9 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <a href="#reserveCard" class="btn btn-sm btn-warning btn-block" role="button">Reserve Table</a>
+                    <a href="#reserveCard" data-toggle="tooltip" data-html="true" title="Or Call us at<br><strong>+852 1234567</strong>"
+                        data-placement="bottom"
+                    class="btn btn-sm btn-warning btn-block" role="button">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -261,6 +284,11 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
 
 </body>
 
