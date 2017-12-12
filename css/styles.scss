@@ -2,9 +2,9 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
+$floral-white: #fffaf0;
 // Height variables
 $carousel-item-height: 300px;
-
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
     margin: 0px auto;
     padding: $pad-up-dn $pad-left-right;
@@ -64,11 +64,30 @@ body {
             min-height: 300px;
         }
     }
-
 }
 
 #carousel-button {
     right: 0px;
     position: absolute;
     bottom: 0px;
+}
+
+// Assignment 4 css Changes
+
+.modal-header {
+    background-color: $background-dark;
+    .modal-title{
+         color: $floral-white;
+    }
+    .close {
+        color: $floral-white;
+    }
+}
+
+.modal-body {
+    background-color: $background-pale;
+}
+
+.modal-footer {
+    background-color: $background-light;
 }

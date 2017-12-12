@@ -14,4 +14,14 @@
           }
 
       });
+
+      //   To Show the reserve Modal on click of Reserve Table Button
+      $("#reserveTableButton").click(function () {
+          $('#reserveTableModal').modal('show');
+      });
+
+      //   To open login Modal on click of Login Button
+      $("#loginButton").click(function () {
+          $('#loginModal').modal('show');
+      });
   });
