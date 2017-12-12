@@ -164,4 +164,5 @@ module.exports = function(grunt) {
         'filerev',
         'usemin'
     ]);
+    grunt.registerTask('usemin', ['concat']);
 }
