@@ -52,6 +52,7 @@ body {
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
+
 .carousel {
     background: $background-dark;
     .carousel-item {
@@ -63,7 +64,7 @@ body {
             min-height: 300px;
         }
     }
-    
+
 }
 
 #carousel-button {
