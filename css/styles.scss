@@ -73,14 +73,11 @@ body {
 }
 
 // Assignment 4 css Changes
-
 .modal-header {
     background-color: $background-dark;
-    .modal-title{
-         color: $floral-white;
-    }
+    color: floralwhite;
     .close {
-        color: $floral-white;
+        color: floralwhite;
     }
 }
 
